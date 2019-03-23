@@ -4,4 +4,5 @@
 body {
   background: red; }
   body p {
-    background: black; }
+    background: black;
+    color: #fff; }
