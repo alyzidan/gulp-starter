@@ -1,0 +1,36 @@
+/*  ---Needed---  */
+/*
+:right ---> :$right
+-right ---> -left
+right: ---> left:
+
+:left  ---> :$left
+-left  ---> -right
+left:  ---> right:
+
+@if ($right == right) {}
+@if ($right == left) {}
+
+@include fontSize(16px);
+
+@include breakpoint(isLaptop){}
+@include breakpoint(isLaptopHR){}
+@include breakpoint(isLaptopLR){}
+@include breakpoint(isTab){}
+@include breakpoint(isTabLR){}
+@include breakpoint(isMob){}
+@include breakpoint(isMobHR){}
+@include breakpoint(isMobLR){}
+@include breakpoint(isIphoneX){}
+*/
+/*  ---Variables---  */
+/*  ---Mixins---  */
+/*  ---Break Points---  */
+.testing {
+  width: 71.42857%; }
+
+body {
+  background: red; }
+  body p {
+    background: yellow;
+    color: #000; }

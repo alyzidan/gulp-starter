@@ -1,9 +1,10 @@
 .testing {
   width: percentage(5/7);
 }
-body{
+body {
   background: red;
   p {
-    background: black
+    background: yellow;
+    color:#000
   }
 }
