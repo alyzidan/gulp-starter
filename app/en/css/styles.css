@@ -1,12 +1,12 @@
 /*  ---Needed---  */
 /*
 :right ---> :$right
--right ---> -left
-right: ---> left:
+-right ---> -right
+right: ---> right:
 
 :left  ---> :$left
--left  ---> -right
-left:  ---> right:
+-left  ---> -left
+left:  ---> left:
 
 @if ($right == right) {}
 @if ($right == left) {}
@@ -32,5 +32,6 @@ left:  ---> right:
 body {
   background: red; }
   body p {
-    background: yellow;
-    color: #000; }
+    background: black;
+    color: #fff;
+    float: left; }

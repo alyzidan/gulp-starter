@@ -53,7 +53,7 @@ gulp.task('sass-en', function() {
 })
 // Watchers
 gulp.task('watch', function() {
-  gulp.watch('app/scss/**/*.scss', ['sass','sass-ar','sass-en']);
+  gulp.watch('app/scss/**/*.scss', ['sass-ar','sass-en']);
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/**/*.js', browserSync.reload);
 })
@@ -102,7 +102,7 @@ gulp.task('clean:dist', function() {
 // ---------------
 
 gulp.task('default', function(callback) {
-  runSequence(['sass','sass-ar','sass-en', 'browserSync'], 'watch',
+  runSequence(['sass-ar','sass-en', 'browserSync'], 'watch',
     callback
   )
 })
@@ -110,7 +110,8 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
-    'sass',
+    'sass-ar',
+    'sass-en',
     ['useref', 'images', 'fonts'],
     callback
   )

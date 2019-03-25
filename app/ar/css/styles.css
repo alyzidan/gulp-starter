@@ -32,5 +32,6 @@ left:  ---> right:
 body {
   background: red; }
   body p {
-    background: yellow;
-    color: #000; }
+    background: black;
+    color: #fff;
+    float: right; }
